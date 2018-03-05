@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3DC6179F204CE9DE00AFE53C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6179E204CE9DE00AFE53C /* AppDelegate.swift */; };
-		3DC617A1204CE9DE00AFE53C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC617A0204CE9DE00AFE53C /* ViewController.swift */; };
+		3DC617A1204CE9DE00AFE53C /* AudioRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC617A0204CE9DE00AFE53C /* AudioRouteViewController.swift */; };
 		3DC617A4204CE9DE00AFE53C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC617A2204CE9DE00AFE53C /* Main.storyboard */; };
 		3DC617A6204CE9DE00AFE53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC617A5204CE9DE00AFE53C /* Assets.xcassets */; };
 		3DC617A9204CE9DE00AFE53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC617A7204CE9DE00AFE53C /* LaunchScreen.storyboard */; };
 		3DC617B4204CE9DF00AFE53C /* TestAudioStreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC617B3204CE9DF00AFE53C /* TestAudioStreamingTests.swift */; };
 		3DC617BF204CE9DF00AFE53C /* TestAudioStreamingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC617BE204CE9DF00AFE53C /* TestAudioStreamingUITests.swift */; };
+		3DC61809204CF25100AFE53C /* AudioSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		3DC6179B204CE9DE00AFE53C /* TestAudioStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAudioStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC6179E204CE9DE00AFE53C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DC617A0204CE9DE00AFE53C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DC617A0204CE9DE00AFE53C /* AudioRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRouteViewController.swift; sourceTree = "<group>"; };
 		3DC617A3204CE9DE00AFE53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DC617A5204CE9DE00AFE53C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC617A8204CE9DE00AFE53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		3DC617BA204CE9DF00AFE53C /* TestAudioStreamingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAudioStreamingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC617BE204CE9DF00AFE53C /* TestAudioStreamingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAudioStreamingUITests.swift; sourceTree = "<group>"; };
 		3DC617C0204CE9DF00AFE53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSourceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				3DC6179E204CE9DE00AFE53C /* AppDelegate.swift */,
-				3DC617A0204CE9DE00AFE53C /* ViewController.swift */,
+				3DC617A0204CE9DE00AFE53C /* AudioRouteViewController.swift */,
+				3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */,
 				3DC617A2204CE9DE00AFE53C /* Main.storyboard */,
 				3DC617A5204CE9DE00AFE53C /* Assets.xcassets */,
 				3DC617A7204CE9DE00AFE53C /* LaunchScreen.storyboard */,
@@ -193,7 +196,7 @@
 				TargetAttributes = {
 					3DC6179A204CE9DE00AFE53C = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					3DC617AE204CE9DF00AFE53C = {
 						CreatedOnToolsVersion = 9.1;
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC617A1204CE9DE00AFE53C /* ViewController.swift in Sources */,
+				3DC61809204CF25100AFE53C /* AudioSourceViewController.swift in Sources */,
+				3DC617A1204CE9DE00AFE53C /* AudioRouteViewController.swift in Sources */,
 				3DC6179F204CE9DE00AFE53C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,12 +430,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5WD9C99DFM;
 				INFOPLIST_FILE = TestAudioStreaming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.audible.TestAudioStreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8ffa49b5-ec25-41d9-a641-8bc77aab9871";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,12 +447,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5WD9C99DFM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestAudioStreaming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.audible.TestAudioStreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

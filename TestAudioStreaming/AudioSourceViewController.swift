@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AudioSourceViewController.swift
 //  TestAudioStreaming
 //
 //  Created by Arnav Anshul on 3/4/18.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AudioSourceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        self.view.backgroundColor = UIColor.blue
     }
 
     override func didReceiveMemoryWarning() {
