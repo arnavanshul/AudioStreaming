@@ -17,10 +17,35 @@
                     <view key="view" contentMode="scaleToFill" id="UgY-M7-kFj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f8f-aY-i4u" userLabel="AudioSourceOptionsTableView">
+                                <rect key="frame" x="-0.5" y="10" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AudioSourceOption" id="X1Q-g7-b7p">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X1Q-g7-b7p" id="Se7-Ol-3wc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f8f-aY-i4u" firstAttribute="centerY" secondItem="1fF-9B-fvF" secondAttribute="centerY" id="1lp-pO-3qQ"/>
+                            <constraint firstItem="f8f-aY-i4u" firstAttribute="width" secondItem="UgY-M7-kFj" secondAttribute="width" id="Idk-Jc-Sda"/>
+                            <constraint firstItem="f8f-aY-i4u" firstAttribute="centerX" secondItem="1fF-9B-fvF" secondAttribute="centerX" id="doN-WO-zzB"/>
+                            <constraint firstItem="f8f-aY-i4u" firstAttribute="height" secondItem="UgY-M7-kFj" secondAttribute="height" id="edr-GI-NHz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1fF-9B-fvF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Audio Source" id="E8h-Dv-1IF" userLabel="Audio Source"/>
+                    <connections>
+                        <outlet property="audioSourceOptionsTableView" destination="f8f-aY-i4u" id="HSz-Zo-gHu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5c8-nF-66w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

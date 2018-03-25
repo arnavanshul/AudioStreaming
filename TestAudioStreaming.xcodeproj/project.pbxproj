@@ -15,6 +15,8 @@
 		3DC617B4204CE9DF00AFE53C /* TestAudioStreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC617B3204CE9DF00AFE53C /* TestAudioStreamingTests.swift */; };
 		3DC617BF204CE9DF00AFE53C /* TestAudioStreamingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC617BE204CE9DF00AFE53C /* TestAudioStreamingUITests.swift */; };
 		3DC61809204CF25100AFE53C /* AudioSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */; };
+		3DDCE54E20672E5D00124ACF /* AudioSourceOptionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDCE54D20672E5D00124ACF /* AudioSourceOptionsDataSource.swift */; };
+		3DDCE5512067354700124ACF /* AudioSourceOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DDCE5502067354700124ACF /* AudioSourceOptions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3DC617BE204CE9DF00AFE53C /* TestAudioStreamingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAudioStreamingUITests.swift; sourceTree = "<group>"; };
 		3DC617C0204CE9DF00AFE53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSourceViewController.swift; sourceTree = "<group>"; };
+		3DDCE54D20672E5D00124ACF /* AudioSourceOptionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSourceOptionsDataSource.swift; sourceTree = "<group>"; };
+		3DDCE5502067354700124ACF /* AudioSourceOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AudioSourceOptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */,
+				3DDCE54D20672E5D00124ACF /* AudioSourceOptionsDataSource.swift */,
 			);
 			path = AudioSource;
 			sourceTree = "<group>";
@@ -115,10 +120,11 @@
 		3DC6179D204CE9DE00AFE53C /* TestAudioStreaming */ = {
 			isa = PBXGroup;
 			children = (
+				3DC617A2204CE9DE00AFE53C /* Main.storyboard */,
+				3DC6179E204CE9DE00AFE53C /* AppDelegate.swift */,
 				3D2E27602067220C00AF6956 /* AudioRoute */,
 				3D2E275F206721FF00AF6956 /* AudioSource */,
-				3DC6179E204CE9DE00AFE53C /* AppDelegate.swift */,
-				3DC617A2204CE9DE00AFE53C /* Main.storyboard */,
+				3DDCE54F2067351D00124ACF /* Resources */,
 				3DC617A5204CE9DE00AFE53C /* Assets.xcassets */,
 				3DC617A7204CE9DE00AFE53C /* LaunchScreen.storyboard */,
 				3DC617AA204CE9DE00AFE53C /* Info.plist */,
@@ -142,6 +148,14 @@
 				3DC617C0204CE9DF00AFE53C /* Info.plist */,
 			);
 			path = TestAudioStreamingUITests;
+			sourceTree = "<group>";
+		};
+		3DDCE54F2067351D00124ACF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DDCE5502067354700124ACF /* AudioSourceOptions.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC617A9204CE9DE00AFE53C /* LaunchScreen.storyboard in Resources */,
+				3DDCE5512067354700124ACF /* AudioSourceOptions.plist in Resources */,
 				3DC617A6204CE9DE00AFE53C /* Assets.xcassets in Resources */,
 				3DC617A4204CE9DE00AFE53C /* Main.storyboard in Resources */,
 			);
@@ -281,6 +296,7 @@
 				3DC61809204CF25100AFE53C /* AudioSourceViewController.swift in Sources */,
 				3DC617A1204CE9DE00AFE53C /* AudioRouteViewController.swift in Sources */,
 				3DC6179F204CE9DE00AFE53C /* AppDelegate.swift in Sources */,
+				3DDCE54E20672E5D00124ACF /* AudioSourceOptionsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
