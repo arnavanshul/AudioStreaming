@@ -76,6 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2E275F206721FF00AF6956 /* AudioSource */ = {
+			isa = PBXGroup;
+			children = (
+				3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */,
+			);
+			path = AudioSource;
+			sourceTree = "<group>";
+		};
+		3D2E27602067220C00AF6956 /* AudioRoute */ = {
+			isa = PBXGroup;
+			children = (
+				3DC617A0204CE9DE00AFE53C /* AudioRouteViewController.swift */,
+			);
+			path = AudioRoute;
+			sourceTree = "<group>";
+		};
 		3DC61792204CE9DE00AFE53C = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +115,9 @@
 		3DC6179D204CE9DE00AFE53C /* TestAudioStreaming */ = {
 			isa = PBXGroup;
 			children = (
+				3D2E27602067220C00AF6956 /* AudioRoute */,
+				3D2E275F206721FF00AF6956 /* AudioSource */,
 				3DC6179E204CE9DE00AFE53C /* AppDelegate.swift */,
-				3DC617A0204CE9DE00AFE53C /* AudioRouteViewController.swift */,
-				3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */,
 				3DC617A2204CE9DE00AFE53C /* Main.storyboard */,
 				3DC617A5204CE9DE00AFE53C /* Assets.xcassets */,
 				3DC617A7204CE9DE00AFE53C /* LaunchScreen.storyboard */,

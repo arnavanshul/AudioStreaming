@@ -10,37 +10,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--AudioSourceViewController-->
         <scene sceneID="Gay-wD-2Z2">
             <objects>
-                <viewController id="vh7-HT-kxE" customClass="AudioSourceViewController" customModule="TestAudioStreaming" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AudioSourceViewController" id="vh7-HT-kxE" customClass="AudioSourceViewController" customModule="TestAudioStreaming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UgY-M7-kFj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1fF-9B-fvF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="E8h-Dv-1IF"/>
+                    <tabBarItem key="tabBarItem" title="Audio Source" id="E8h-Dv-1IF" userLabel="Audio Source"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5c8-nF-66w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17" y="474"/>
+            <point key="canvasLocation" x="-55" y="913"/>
         </scene>
-        <!--Item 1-->
+        <!--AudioRouteViewController-->
         <scene sceneID="ua9-JJ-R8n">
             <objects>
-                <viewController id="py5-2k-FOz" customClass="AudioRouteViewController" customModule="TestAudioStreaming" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AudioRouteViewController" id="py5-2k-FOz" customClass="AudioRouteViewController" customModule="TestAudioStreaming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TdW-LX-z0s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="C8N-XB-NXt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="KA8-8d-hgw"/>
+                    <tabBarItem key="tabBarItem" title="Audio Route" id="KA8-8d-hgw" userLabel="Audio Route"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1TD-ox-sf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17" y="-191"/>
+            <point key="canvasLocation" x="-55" y="63"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hbm-xO-kdp">
@@ -58,7 +58,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAt-8q-55Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-969" y="141"/>
+            <point key="canvasLocation" x="-1494" y="488"/>
         </scene>
     </scenes>
 </document>
