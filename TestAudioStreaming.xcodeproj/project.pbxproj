@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D437F8B206FF5AF001B032A /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437F8A206FF5AF001B032A /* MusicListViewController.swift */; };
 		3DC6179F204CE9DE00AFE53C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6179E204CE9DE00AFE53C /* AppDelegate.swift */; };
 		3DC617A1204CE9DE00AFE53C /* AudioRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC617A0204CE9DE00AFE53C /* AudioRouteViewController.swift */; };
 		3DC617A4204CE9DE00AFE53C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC617A2204CE9DE00AFE53C /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D437F8A206FF5AF001B032A /* MusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
 		3DC6179B204CE9DE00AFE53C /* TestAudioStreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAudioStreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC6179E204CE9DE00AFE53C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC617A0204CE9DE00AFE53C /* AudioRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRouteViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */,
 				3DDCE54D20672E5D00124ACF /* AudioSourceOptionsDataSource.swift */,
+				3D437F8A206FF5AF001B032A /* MusicListViewController.swift */,
 			);
 			path = AudioSource;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC61809204CF25100AFE53C /* AudioSourceViewController.swift in Sources */,
+				3D437F8B206FF5AF001B032A /* MusicListViewController.swift in Sources */,
 				3DC617A1204CE9DE00AFE53C /* AudioRouteViewController.swift in Sources */,
 				3DC6179F204CE9DE00AFE53C /* AppDelegate.swift in Sources */,
 				3DDCE54E20672E5D00124ACF /* AudioSourceOptionsDataSource.swift in Sources */,
