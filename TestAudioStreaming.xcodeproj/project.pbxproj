@@ -16,6 +16,8 @@
 		3DC617B4204CE9DF00AFE53C /* TestAudioStreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC617B3204CE9DF00AFE53C /* TestAudioStreamingTests.swift */; };
 		3DC617BF204CE9DF00AFE53C /* TestAudioStreamingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC617BE204CE9DF00AFE53C /* TestAudioStreamingUITests.swift */; };
 		3DC61809204CF25100AFE53C /* AudioSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */; };
+		3DDBB85D2070040100D04A18 /* iTunesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDBB85C2070040100D04A18 /* iTunesDataSource.swift */; };
+		3DDBB860207006E400D04A18 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDBB85F207006E400D04A18 /* MediaPlayer.framework */; };
 		3DDCE54E20672E5D00124ACF /* AudioSourceOptionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDCE54D20672E5D00124ACF /* AudioSourceOptionsDataSource.swift */; };
 		3DDCE5512067354700124ACF /* AudioSourceOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DDCE5502067354700124ACF /* AudioSourceOptions.plist */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		3DC617BE204CE9DF00AFE53C /* TestAudioStreamingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAudioStreamingUITests.swift; sourceTree = "<group>"; };
 		3DC617C0204CE9DF00AFE53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSourceViewController.swift; sourceTree = "<group>"; };
+		3DDBB85C2070040100D04A18 /* iTunesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesDataSource.swift; sourceTree = "<group>"; };
+		3DDBB85F207006E400D04A18 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		3DDCE54D20672E5D00124ACF /* AudioSourceOptionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSourceOptionsDataSource.swift; sourceTree = "<group>"; };
 		3DDCE5502067354700124ACF /* AudioSourceOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AudioSourceOptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDBB860207006E400D04A18 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,7 @@
 				3DC61808204CF25100AFE53C /* AudioSourceViewController.swift */,
 				3DDCE54D20672E5D00124ACF /* AudioSourceOptionsDataSource.swift */,
 				3D437F8A206FF5AF001B032A /* MusicListViewController.swift */,
+				3DDBB85C2070040100D04A18 /* iTunesDataSource.swift */,
 			);
 			path = AudioSource;
 			sourceTree = "<group>";
@@ -107,6 +113,7 @@
 				3DC617B2204CE9DF00AFE53C /* TestAudioStreamingTests */,
 				3DC617BD204CE9DF00AFE53C /* TestAudioStreamingUITests */,
 				3DC6179C204CE9DE00AFE53C /* Products */,
+				3DDBB85E207006E400D04A18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +158,14 @@
 				3DC617C0204CE9DF00AFE53C /* Info.plist */,
 			);
 			path = TestAudioStreamingUITests;
+			sourceTree = "<group>";
+		};
+		3DDBB85E207006E400D04A18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DDBB85F207006E400D04A18 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3DDCE54F2067351D00124ACF /* Resources */ = {
@@ -300,6 +315,7 @@
 				3D437F8B206FF5AF001B032A /* MusicListViewController.swift in Sources */,
 				3DC617A1204CE9DE00AFE53C /* AudioRouteViewController.swift in Sources */,
 				3DC6179F204CE9DE00AFE53C /* AppDelegate.swift in Sources */,
+				3DDBB85D2070040100D04A18 /* iTunesDataSource.swift in Sources */,
 				3DDCE54E20672E5D00124ACF /* AudioSourceOptionsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

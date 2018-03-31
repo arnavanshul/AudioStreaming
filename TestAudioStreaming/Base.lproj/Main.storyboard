@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -62,9 +63,34 @@
                     <view key="view" contentMode="scaleToFill" id="DCR-na-3rL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="odG-rZ-8Qc" userLabel="MusicListTableView">
+                                <rect key="frame" x="0.0" y="32" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicItem" id="2hL-aX-al2">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2hL-aX-al2" id="fDI-f7-NCo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="odG-rZ-8Qc" firstAttribute="top" secondItem="DCR-na-3rL" secondAttribute="topMargin" constant="-32" id="HTM-hy-lhd"/>
+                            <constraint firstItem="odG-rZ-8Qc" firstAttribute="centerY" secondItem="7fK-pc-nfF" secondAttribute="centerY" id="PXR-0N-ihS"/>
+                            <constraint firstItem="odG-rZ-8Qc" firstAttribute="leading" secondItem="DCR-na-3rL" secondAttribute="leading" id="PYU-yR-oMj"/>
+                            <constraint firstItem="odG-rZ-8Qc" firstAttribute="centerX" secondItem="7fK-pc-nfF" secondAttribute="centerX" id="jbf-lS-ZSC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7fK-pc-nfF"/>
                     </view>
+                    <connections>
+                        <outlet property="musicListTableView" destination="odG-rZ-8Qc" id="Lak-u3-Elp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKE-yX-MBG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
