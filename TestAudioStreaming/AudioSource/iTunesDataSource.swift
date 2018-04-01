@@ -10,14 +10,29 @@ import Foundation
 import MediaPlayer
 
 class iTunesDataSource: NSObject {
+    var mediaItems: [MPMediaItem]? = nil
+
     func checkAuthorizationStatus () -> MPMediaLibraryAuthorizationStatus {
         return MPMediaLibrary.authorizationStatus()
     }
 
     func requestAuthorization(with completion: (@escaping (MPMediaLibraryAuthorizationStatus) -> Void)) {
         return MPMediaLibrary.requestAuthorization({ (mediaLibraryAuthorizationStatus) in
+            if mediaLibraryAuthorizationStatus == .authorized {
+                self.fetchMediaItems()
+            }
             completion(mediaLibraryAuthorizationStatus)
         })
+    }
+
+    var mediaLibrary: MPMediaLibrary {
+        get {
+            return MPMediaLibrary.default()
+        }
+    }
+
+    func fetchMediaItems() {
+        self.mediaItems = MPMediaQuery.songs().items
     }
 }
 	
